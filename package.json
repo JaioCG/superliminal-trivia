@@ -1,0 +1,53 @@
+{
+  "name": "superliminal-trivia",
+  "version": "0.0.0",
+  "description": "On-screen graphics for samwise3s's Superliminal Trivia event",
+  "homepage": "https://twitch.tv/samwise3s",
+  "author": {
+    "name": "Jaio",
+    "email": "jaio0701@gmail.com",
+    "url": "https://github.com/jaiocg"
+  },
+  "files": [
+    "dashboard",
+    "graphics"
+  ],
+  "keywords": [
+    "",
+    "nodecg-bundle"
+  ],
+  "nodecg": {
+    "compatibleRange": "^2.0.0",
+    "dashboardPanels": [
+      {
+        "name": "player-management",
+        "title": "Player Management",
+        "width": 3,
+        "file": "player-management.html",
+        "headerColor": "#525F78"
+      }
+    ],
+    "graphics": [
+      {
+        "file": "index.html",
+        "width": 1920,
+        "height": 1080,
+        "singleInstance": false
+      }
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.5%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "license": "UNLICENSED",
+  "private": true
+}
