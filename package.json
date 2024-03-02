@@ -22,7 +22,7 @@
       {
         "name": "player-management",
         "title": "Player Management",
-        "width": 3,
+        "width": 4,
         "file": "player-management.html",
         "headerColor": "#525F78"
       }
