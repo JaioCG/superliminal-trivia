@@ -3,25 +3,65 @@
 	<head>
 		<meta charset="UTF-8" />
         <!-- https://github.com/finnhvman/matter -->
-        <!-- https://codepen.io/finnhvman/full/zMKagM -->
         <link rel="stylesheet" href="https://res.cloudinary.com/finnhvman/raw/upload/matter/matter-0.2.2.css" />
-        <link rel="stylesheet" href="./css/player-management.css" />
+        <link rel="stylesheet" href="css/player-management.css" />
 	</head>
 	<body>
-        <div id="p1-container">
-            <div class="matter-h5">Player 1 (top left)</div>
-            <label class="matter-textfield-standard">
-                <input type="text" id="p1-name" placeholder=" " />
-                <span>Username</span>
-            </label>
-
-            <br><br>
-            <div class="matter-h6">Score Control</div>
-            <button class="matter-button-contained matter-error" id="p1-sub">-</button>
-            <button class="matter-button-contained matter-success" id="p1-add">+</button>
-            <br><p class="matter-body1" id="p1-score">Current Score: 0</p>
+        <div class="grid-container">
+            <div class="grid-item" id="p1-container">
+                <div class="matter-h5">Player 1</div>
+                <label class="matter-textfield-standard">
+                    <input type="text" id="p1-name" placeholder=" " />
+                    <span>Username</span>
+                </label>
+    
+                <br><br>
+                <div class="matter-h6">Score Control</div>
+                <button class="matter-button-contained matter-error" onclick="incPoints(1, -1)">-</button>
+                <button class="matter-button-contained matter-success" onclick="incPoints(1, 1)">+</button>
+                <br><p class="matter-body1" id="p1-score">Current Score: 0</p>
+            </div>
+            <div class="grid-item" id="p2-container">
+                <div class="matter-h5">Player 2</div>
+                <label class="matter-textfield-standard">
+                    <input type="text" id="p2-name" placeholder=" " />
+                    <span>Username</span>
+                </label>
+    
+                <br><br>
+                <div class="matter-h6">Score Control</div>
+                <button class="matter-button-contained matter-error" onclick="incPoints(2, -1)">-</button>
+                <button class="matter-button-contained matter-success" onclick="incPoints(2, 1)"">+</button>
+                <br><p class="matter-body1" id="p2-score">Current Score: 0</p>
+            </div>
+            <div class="grid-item" id="p3-container">
+                <div class="matter-h5">Player 3</div>
+                <label class="matter-textfield-standard">
+                    <input type="text" id="p3-name" placeholder=" " />
+                    <span>Username</span>
+                </label>
+    
+                <br><br>
+                <div class="matter-h6">Score Control</div>
+                <button class="matter-button-contained matter-error" onclick="incPoints(3, -1)">-</button>
+                <button class="matter-button-contained matter-success" onclick="incPoints(3, 1)">+</button>
+                <br><p class="matter-body1" id="p3-score">Current Score: 0</p>
+            </div>
+            <div class="grid-item" id="p4-container">
+                <div class="matter-h5">Player 4</div>
+                <label class="matter-textfield-standard">
+                    <input type="text" id="p4-name" placeholder=" " />
+                    <span>Username</span>
+                </label>
+    
+                <br><br>
+                <div class="matter-h6">Score Control</div>
+                <button class="matter-button-contained matter-error" onclick="incPoints(4, -1)">-</button>
+                <button class="matter-button-contained matter-success" onclick="incPoints(4, 1)">+</button>
+                <br><p class="matter-body1" id="p4-score">Current Score: 0</p>
+            </div>
         </div>
 
-		<script type="module" src="./js/player-management.js"></script>
+		<script src="js/player-management.js"></script>
 	</body>
 </html>

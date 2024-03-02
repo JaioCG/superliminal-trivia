@@ -1,21 +1,18 @@
-/* Input, Textarea */
+/* Text input color changes (to light mode) */
 .matter-textfield-standard > input,
 .matter-textfield-standard > textarea {
     border-bottom: solid 1px rgba(204, 204, 204, 0.6);
     color: rgba(255, 255, 255, 1);
     caret-color: rgb(var(--matter-helper-theme));
 }
-/* Span */
 .matter-textfield-standard > input + span,
 .matter-textfield-standard > textarea + span {
     color: rgba(204, 204, 204, 0.6);
 }
-/* Underline */
 .matter-textfield-standard > input + span::after,
 .matter-textfield-standard > textarea + span::after {
     background-color: rgb(var(--matter-helper-theme));
 }
-/* Hover */
 .matter-textfield-standard:hover > input,
 .matter-textfield-standard:hover > textarea {
     border-bottom-color: rgba(204, 204, 204, 0.87);
@@ -23,4 +20,16 @@
 .matter-textfield-standard > input:focus + span,
 .matter-textfield-standard > textarea:focus + span {
     color: rgb(var(--matter-helper-theme));
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 0px;
+    padding: 0px;
+}
+
+.grid-item {
+    border: 1px solid #525f78;
+    padding: 5px;
 }
