@@ -2,13 +2,24 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-        <link rel="stylesheet" href="./css/common.css" />
+        <!-- https://github.com/finnhvman/matter -->
+        <!-- https://codepen.io/finnhvman/full/zMKagM -->
+        <link rel="stylesheet" href="https://res.cloudinary.com/finnhvman/raw/upload/matter/matter-0.2.2.css" />
         <link rel="stylesheet" href="./css/player-management.css" />
 	</head>
 	<body>
-        <div class="form__group" id="p1-container">
-                <input type="text" class="form__field" id="p1-name" placeholder="Username" />
-                <label for="p1-name" class="form__label">Username</label>
+        <div id="p1-container">
+            <div class="matter-h5">Player 1 (top left)</div>
+            <label class="matter-textfield-standard">
+                <input type="text" id="p1-name" placeholder=" " />
+                <span>Username</span>
+            </label>
+
+            <br><br>
+            <div class="matter-h6">Score Control</div>
+            <button class="matter-button-contained matter-error" id="p1-sub">-</button>
+            <button class="matter-button-contained matter-success" id="p1-add">+</button>
+            <br><p class="matter-body1" id="p1-score">Current Score: 0</p>
         </div>
 
 		<script type="module" src="./js/player-management.js"></script>
