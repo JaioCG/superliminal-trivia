@@ -12,6 +12,10 @@ const p1NameInput = document.getElementById('p1-name');
 const p2NameInput = document.getElementById('p2-name');
 const p3NameInput = document.getElementById('p3-name');
 const p4NameInput = document.getElementById('p4-name');
+const p1ScoreOutput = document.getElementById('p1-score');
+const p2ScoreOutput = document.getElementById('p2-score');
+const p3ScoreOutput = document.getElementById('p3-score');
+const p4ScoreOutput = document.getElementById('p4-score');
 
 p1NameInput.addEventListener('keydown', (e) => {
     if(e.key === 'Enter')
@@ -49,19 +53,48 @@ function incPoints(player, value)
     {
         case 1:
             p1ScoreRep.value += value;
-            console.log(`Player 1 score updated to ${p1ScoreRep.value}`);
             break;
         case 2:
             p2ScoreRep.value += value;
-            console.log(`Player 2 score updated to ${p2ScoreRep.value}`);
             break;
         case 3:
             p3ScoreRep.value += value;
-            console.log(`Player 3 score updated to ${p3ScoreRep.value}`);
             break;
         case 4:
             p4ScoreRep.value += value;
-            console.log(`Player 4 score updated to ${p4ScoreRep.value}`);
             break;
     }
 }
+
+p1NameRep.on('change', (newValue) => {
+    p1NameInput.value = newValue;
+    console.log(`Player 1 name updated to ${newValue}`);
+});
+p2NameRep.on('change', (newValue) => {
+    p2NameInput.value = newValue;
+    console.log(`Player 2 name updated to ${newValue}`);
+});
+p3NameRep.on('change', (newValue) => {
+    p3NameInput.value = newValue;
+    console.log(`Player 3 name updated to ${newValue}`);
+});
+p4NameRep.on('change', (newValue) => {
+    p4NameInput.value = newValue;
+    console.log(`Player 4 name updated to ${newValue}`);
+});
+p1ScoreRep.on('change', (newValue) => {
+    p1ScoreOutput.innerHTML = `Current score: ${p1ScoreRep.value}`;
+    console.log(`Player 1 score updated to ${newValue}`);
+});
+p2ScoreRep.on('change', (newValue) => {
+    p2ScoreOutput.innerHTML = `Current score: ${p2ScoreRep.value}`;
+    console.log(`Player 2 score updated to ${newValue}`);
+});
+p3ScoreRep.on('change', (newValue) => {
+    p3ScoreOutput.innerHTML = `Current score: ${p3ScoreRep.value}`;
+    console.log(`Player 3 score updated to ${newValue}`);
+});
+p4ScoreRep.on('change', (newValue) => {
+    p4ScoreOutput.innerHTML = `Current score: ${p4ScoreRep.value}`;
+    console.log(`Player 4 score updated to ${newValue}`);
+});
