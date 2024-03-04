@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- https://github.com/finnhvman/matter -->
+    <link rel="stylesheet" href="https://res.cloudinary.com/finnhvman/raw/upload/matter/matter-0.2.2.css" />
+</head>
+<body>
+    <div class="matter-body1" id="currQuestionType">Question One: Testing</div>
+    <div class="matter-h5" id="currQuestionText">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</div>
+    <br>
+    <img src="https://via.placeholder.com/385" id="currQuestionImg" style="width: 385px;" />
+
+    <br><br>
+    <button class="matter-button-contained matter-error" onclick="changeQuestion(-1)">Previous Question</button>
+    <button class="matter-button-contained matter-success" onclick="changeQuestion(1)">Next Question</button>
+    <p class="matter-body2" id="nextQuestionType">Next question type: Standard Question</p>
+    <button class="matter-button-contained matter-warning" onclick="resetQuestion()">Reset to Question 1</button>
+
+    <script src="js/question-management.js"></script>
+</body>
+</html>

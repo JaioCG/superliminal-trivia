@@ -25,6 +25,13 @@
         "width": 4,
         "file": "player-management.html",
         "headerColor": "#525F78"
+      },
+      {
+        "name": "question-management",
+        "title": "Question Management",
+        "width": 3,
+        "file": "question-management.html",
+        "headerColor": "#525F78"
       }
     ],
     "graphics": [
