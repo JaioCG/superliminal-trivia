@@ -8,6 +8,7 @@ const p2ScoreRep = nodecg.Replicant('p2Score', {defaultValue: 0});
 const p3ScoreRep = nodecg.Replicant('p3Score', {defaultValue: 0});
 const p4ScoreRep = nodecg.Replicant('p4Score', {defaultValue: 0});
 
+// Get elements for sources
 const p1Name = document.getElementById('p1-name');
 const p2Name = document.getElementById('p2-name');
 const p3Name = document.getElementById('p3-name');
@@ -17,6 +18,7 @@ const p2Score = document.getElementById('p2-score');
 const p3Score = document.getElementById('p3-score');
 const p4Score = document.getElementById('p4-score');
 
+// Handle name/score changes
 p1NameRep.on('change', (newValue) => {
     console.log(`p1NameRep changed to ${newValue}`)
     p1Name.innerHTML = newValue;
@@ -48,4 +50,12 @@ p3ScoreRep.on('change', (newValue) => {
 p4ScoreRep.on('change', (newValue) => {
     console.log(`p4ScoreRep changed to ${newValue}`)
     p4Score.innerHTML = newValue;
+});
+
+// Set questions
+const currQuestionRep = nodecg.Replicant('currQuestion');
+
+currQuestionRep.on('change', (newValue) => {
+    console.log(newValue);
+    document.getElementById('question').innerHTML = newValue;
 });

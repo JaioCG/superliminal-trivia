@@ -3,6 +3,8 @@ const currQuestionText = document.getElementById('currQuestionText');
 const currQuestionImg = document.getElementById('currQuestionImg');
 const nextQuestionType = document.getElementById('nextQuestionType');
 
+const currQuestionRep = nodecg.Replicant('currQuestion');
+
 var currentQuestionNum = 0;
 
 function loadQuestion()
@@ -13,9 +15,12 @@ function loadQuestion()
         const QUESTIONS = json;
 
         currQuestionType.innerHTML = `Question ${currentQuestionNum + 1}: ${QUESTIONS.questions[currentQuestionNum].type}`;
-        currQuestionText.innerHTML = QUESTIONS.questions[currentQuestionNum].question;
+        let question = QUESTIONS.questions[currentQuestionNum].question;
+        currQuestionText.innerHTML = question;
+        currQuestionRep.value = question;
         currQuestionImg.src = QUESTIONS.questions[currentQuestionNum].img;
         nextQuestionType.innerHTML = `Next question type: ${QUESTIONS.questions[currentQuestionNum + 1].type}`;
+
     });
 }
 
