@@ -54,8 +54,13 @@ p4ScoreRep.on('change', (newValue) => {
 
 // Set questions
 const currQuestionRep = nodecg.Replicant('currQuestion');
+const currImageRep = nodecg.Replicant('currImage');
 
 currQuestionRep.on('change', (newValue) => {
     console.log(newValue);
     document.getElementById('question').innerHTML = newValue;
+});
+currImageRep.on('change', (newValue) => {
+    console.log(newValue);
+    document.getElementById('image').src = newValue;
 });

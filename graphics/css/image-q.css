@@ -1,0 +1,82 @@
+/* Import fonts */
+@font-face {
+    font-family: 'Noto Sans';
+    src: url('../assets/fonts/NotoSans.ttf');
+}
+
+body {
+    background-color: #ccc;
+}
+
+.background-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.question-container {
+    position: absolute;
+    left: 527px;
+    top: 93px;
+    width: 880px;
+    height: 880px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#image {
+    width: 880px;
+}
+
+.player-container {
+    position: absolute;
+    /* Left and top defined individually */
+    width: 374px;
+    height: 236px;
+
+    font-family: 'Noto Sans';
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 65px;
+    color: #fff;
+}
+
+.player-name {
+    position: absolute;
+    left: 57px;
+    top: 196px;
+    width: 260px;
+    height: 40px;
+    text-align: center;
+
+    font-size: 32px;
+    line-height: 40px;
+}
+
+.player-score {
+    position: absolute;
+    left: 309px;
+    top: 40px;
+    width: 65px;
+    height: 65px;
+    text-align: center;
+}
+
+#p1-container {
+    left: 1496px;
+    top: 48px;
+}
+#p2-container {
+    left: 1496px;
+    top: 304px;
+}
+#p3-container {
+    left: 1496px;
+    top: 560px;
+}
+#p4-container {
+    left: 1496px;
+    top: 815px;
+}

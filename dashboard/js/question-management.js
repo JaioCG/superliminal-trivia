@@ -4,6 +4,7 @@ const currQuestionImg = document.getElementById('currQuestionImg');
 const nextQuestionType = document.getElementById('nextQuestionType');
 
 const currQuestionRep = nodecg.Replicant('currQuestion');
+const currImageRep = nodecg.Replicant('currImage');
 
 var currentQuestionNum = 0;
 
@@ -18,7 +19,9 @@ function loadQuestion()
         let question = QUESTIONS.questions[currentQuestionNum].question;
         currQuestionText.innerHTML = question;
         currQuestionRep.value = question;
-        currQuestionImg.src = QUESTIONS.questions[currentQuestionNum].img;
+        let image = QUESTIONS.questions[currentQuestionNum].img;
+        currQuestionImg.src = image;
+        currImageRep.value = image;
         nextQuestionType.innerHTML = `Next question type: ${QUESTIONS.questions[currentQuestionNum + 1].type}`;
 
     });
