@@ -1,8 +1,10 @@
 const currQuestionType = document.getElementById('currQuestionType');
 const currQuestionText = document.getElementById('currQuestionText');
 const currQuestionImg = document.getElementById('currQuestionImg');
+const currQuestionAns = document.getElementById('currQuestionAns');
 const nextQuestionType = document.getElementById('nextQuestionType');
 
+const currQuestionTypeRep = nodecg.Replicant('currQuestionType');
 const currQuestionRep = nodecg.Replicant('currQuestion');
 const currImageRep = nodecg.Replicant('currImage');
 
@@ -15,13 +17,16 @@ function loadQuestion()
     .then((json) => {
         const QUESTIONS = json;
 
-        currQuestionType.innerHTML = `Question ${currentQuestionNum + 1}: ${QUESTIONS.questions[currentQuestionNum].type}`;
+        let questionType = QUESTIONS.questions[currentQuestionNum].type;
+        currQuestionType.innerHTML = `Question ${currentQuestionNum + 1}: ${questionType}`;
+        currQuestionTypeRep.value = questionType;
         let question = QUESTIONS.questions[currentQuestionNum].question;
         currQuestionText.innerHTML = question;
         currQuestionRep.value = question;
         let image = QUESTIONS.questions[currentQuestionNum].img;
         currQuestionImg.src = image;
         currImageRep.value = image;
+        currQuestionAns.innerHTML = `Answer: ${QUESTIONS.questions[currentQuestionNum].answer}`;
         nextQuestionType.innerHTML = `Next question type: ${QUESTIONS.questions[currentQuestionNum + 1].type}`;
 
     });
