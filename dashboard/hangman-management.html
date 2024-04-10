@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <!-- https://github.com/finnhvman/matter -->
+    <link rel="stylesheet" href="https://res.cloudinary.com/finnhvman/raw/upload/matter/matter-0.2.2.css" />
+</head>
+<body>
+    <div class="matter-body1" id="no-hangman">Current question is not of type Hangman.</div>
+
+    <div id="hangman-container" style="visibility: hidden;">
+        <div class="matter-h5" id="currQuestionText" style="white-space: pre-wrap;">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</div>
+        <br>
+
+        <!-- Letter buttons -->
+        <button id="guessbutton-A" onclick="guessLetter('A')">A</button>
+        <button id="guessbutton-B" onclick="guessLetter('B')">B</button>
+        <button id="guessbutton-C" onclick="guessLetter('C')">C</button>
+        <button id="guessbutton-D" onclick="guessLetter('D')">D</button>
+        <button id="guessbutton-E" onclick="guessLetter('E')">E</button>
+        <button id="guessbutton-F" onclick="guessLetter('F')">F</button>
+        <button id="guessbutton-G" onclick="guessLetter('G')">G</button>
+        <button id="guessbutton-H" onclick="guessLetter('H')">H</button>
+        <button id="guessbutton-I" onclick="guessLetter('I')">I</button>
+        <button id="guessbutton-J" onclick="guessLetter('J')">J</button>
+        <button id="guessbutton-K" onclick="guessLetter('K')">K</button>
+        <button id="guessbutton-L" onclick="guessLetter('L')">L</button>
+        <button id="guessbutton-M" onclick="guessLetter('M')">M</button>
+        <button id="guessbutton-N" onclick="guessLetter('N')">N</button>
+        <button id="guessbutton-O" onclick="guessLetter('O')">O</button>
+        <button id="guessbutton-P" onclick="guessLetter('P')">P</button>
+        <button id="guessbutton-Q" onclick="guessLetter('Q')">Q</button>
+        <button id="guessbutton-R" onclick="guessLetter('R')">R</button>
+        <button id="guessbutton-S" onclick="guessLetter('S')">S</button>
+        <button id="guessbutton-T" onclick="guessLetter('T')">T</button>
+        <button id="guessbutton-U" onclick="guessLetter('U')">U</button>
+        <button id="guessbutton-V" onclick="guessLetter('V')">V</button>
+        <button id="guessbutton-W" onclick="guessLetter('W')">W</button>
+        <button id="guessbutton-X" onclick="guessLetter('X')">X</button>
+        <button id="guessbutton-Y" onclick="guessLetter('Y')">Y</button>
+        <button id="guessbutton-Z" onclick="guessLetter('Z')">Z</button>
+    </div>
+    
+    <script src="js/hangman-management.js"></script>
+</body>
+</html>

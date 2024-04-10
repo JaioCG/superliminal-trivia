@@ -55,6 +55,8 @@ p4ScoreRep.on('change', (newValue) => {
 // Set questions
 const currQuestionRep = nodecg.Replicant('currQuestion');
 const currImageRep = nodecg.Replicant('currImage');
+const hangmanQuestionRep = nodecg.Replicant('hangmanQuestion');
+
 
 currQuestionRep.on('change', (newValue) => {
     console.log(newValue);
@@ -63,4 +65,8 @@ currQuestionRep.on('change', (newValue) => {
 currImageRep.on('change', (newValue) => {
     console.log(newValue);
     document.getElementById('image').src = newValue;
+});
+hangmanQuestionRep.on('change', (newValue) => {
+    console.log(newValue);
+    document.getElementById('hangman-question').innerHTML = newValue;
 });

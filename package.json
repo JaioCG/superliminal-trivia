@@ -32,6 +32,13 @@
         "width": 3,
         "file": "question-management.html",
         "headerColor": "#525F78"
+      },
+      {
+        "name": "hangman-management",
+        "title": "Hangman Management",
+        "width": 3,
+        "file": "hangman-management.html",
+        "headerColor": "#525F78"
       }
     ],
     "graphics": [
@@ -46,6 +53,12 @@
         "width": 1920,
         "height": 1080,
         "singleInstance": false
+      },
+      {
+          "file": "hangman-q.html",
+          "width": 1920,
+          "height": 1080,
+          "singleInstance": false
       }
     ]
   },

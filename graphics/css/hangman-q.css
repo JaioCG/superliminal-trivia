@@ -1,0 +1,89 @@
+/* Import fonts */
+@font-face {
+    font-family: 'Noto Sans';
+    src: url('../assets/fonts/NotoSans.ttf');
+}
+
+body {
+    background-color: #ccc;
+}
+
+.background-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.question-container {
+    position: absolute;
+    top: 0px;
+    left: 550px;
+    width: 1320px;
+    height: 515px;
+
+    font-family: 'Noto Sans';
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 80px;
+    color: #364a87;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#hangman-question {
+    text-align: center;
+    flex: 0 0 1200px;
+}
+
+.player-container {
+    position: absolute;
+    /* Left and top defined individually */
+    width: 530px;
+    height: 340px;
+
+    font-family: 'Noto Sans';
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 65px;
+    color: #fff;
+}
+
+.player-name {
+    position: absolute;
+    left: 20px;
+    top: 395px;
+    width: 260px;
+    height: 40px;
+    text-align: center;
+
+    font-size: 32px;
+    line-height: 40px;
+}
+
+.player-score {
+    position: absolute;
+    left: 235px;
+    top: 46px;
+    width: 65px;
+    height: 65px;
+    text-align: center;
+}
+
+#p1-container {
+    left: 550px;
+    top: 615px;
+}
+#p2-container {
+    left: 890px;
+    top: 615px;
+}
+#p3-container {
+    left: 1230px;
+    top: 615px;
+}
+#p4-container {
+    left: 1570px;
+    top: 615px;
+}
