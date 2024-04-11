@@ -1,0 +1,40 @@
+/* Import fonts */
+@font-face {
+    font-family: 'Noto Sans';
+    src: url('../assets/fonts/NotoSans.ttf');
+}
+
+body {
+    background-color: #ccc;
+}
+
+.background-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 1920px;
+}
+
+#text-container {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 1920px;
+    height: 1080px;
+
+    font-family: 'Noto Sans';
+    font-weight: 700;
+    font-size: 128px;
+    line-height: 128px;
+    color: #fff;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    text-shadow: #000 0px 0px 100px;
+}
+
+.large-text {
+    text-align: center;
+}

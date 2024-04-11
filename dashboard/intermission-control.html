@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- https://github.com/finnhvman/matter -->
+    <link rel="stylesheet" href="https://res.cloudinary.com/finnhvman/raw/upload/matter/matter-0.2.2.css" />
+    <link rel="stylesheet" href="css/player-management.css" />
+</head>
+<body>
+    <p class="matter-h6">Intermission Text Control</p>
+    <div id="radio-buttons">
+        <input type="radio" name="intermission-text" id="starting-soon" value="STARTING SOON" onclick="updateRadio(0)" checked>
+        <label for="starting-soon" class="matter-body1">STARTING SOON</label><br>
+        <input type="radio" name="intermission-text" id="be-right-back" value="BE RIGHT BACK" onclick="updateRadio(1)">
+        <label for="be-right-back" class="matter-body1">BE RIGHT BACK</label><br>
+        <input type="radio" name="intermission-text" id="thanks-for-watching" value="THANKS FOR WATCHING" onclick="updateRadio(2)">
+        <label for="thanks-for-watching" class="matter-body1">THANKS FOR WATCHING</label>
+    </div>
+
+    <br>
+
+    <p class="matter-h6">Countdown Timer Control</p>
+    <input type="checkbox" id="timer-checkbox" onclick="toggleTimer()" checked>
+    <label for="timer-checkbox" class="matter-body1">Enable Countdown Timer</label><br>
+    <label class="matter-textfield-standard">
+        <input type="text" id="minutes" placeholder=" " />
+        <span>Timer Duration (minutes)</span>
+    </label><br><br>
+    <button class="matter-button-contained matter-primary" id="start-timer" onclick="startTimer()">Start Countdown Timer</button>
+    <button class="matter-button-contained matter-error" id="stop-timer" onclick="stopTimer()">Stop Timer</button>
+    <p class="matter-body1" id="timer-status">Timer is not running</p>
+
+    <script src="js/intermission-control.js"></script>
+</body>
+</html>

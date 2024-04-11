@@ -20,6 +20,13 @@
     "compatibleRange": "^2.0.0",
     "dashboardPanels": [
       {
+        "name": "intermission-control",
+        "title": "Intermission Control",
+        "width": 3,
+        "file": "intermission-control.html",
+        "headerColor": "#525F78"
+      },
+      {
         "name": "player-management",
         "title": "Player Management",
         "width": 4,
@@ -42,6 +49,12 @@
       }
     ],
     "graphics": [
+      {
+          "file": "intermission.html",
+          "width": 1920,
+          "height": 1080,
+          "singleInstance": false
+      },
       {
         "file": "standard-q.html",
         "width": 1920,
