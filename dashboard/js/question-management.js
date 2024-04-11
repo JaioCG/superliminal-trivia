@@ -18,7 +18,7 @@ function loadQuestion()
         const QUESTIONS = json;
 
         let questionType = QUESTIONS.questions[currentQuestionNum].type;
-        currQuestionType.innerHTML = `Question ${currentQuestionNum + 1}: ${questionType}`;
+        currQuestionType.innerHTML = `Question ${currentQuestionNum}: ${questionType}`;
         currQuestionTypeRep.value = questionType;
         let question = QUESTIONS.questions[currentQuestionNum].question;
         currQuestionText.innerHTML = question;
